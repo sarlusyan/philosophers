@@ -1,13 +1,13 @@
 #include "philo.h"
 
-void	init(t_philo *philo, int argc, char **argv)
+int	init(t_philo *philo, int argc, char **argv)
 {
 	int i;
 
 	i = 1;
 	while (i < argc)
 	{
-		if (ft_isdigit(argv[i]))
+		if (ft_isdigit(ft_atoi(argv[i])))
 			return (0);
 		if (ft_atoi(argv[i]) < 0)
 			return (0);

@@ -36,6 +36,6 @@ t_philo philo;
 
 int		ft_atoi(const char *str);
 int		ft_isdigit(int c);
-void	init(int argc, char **argv);
+int		init(t_philo *philo, int argc, char **argv);
 
 #endif

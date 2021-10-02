@@ -13,10 +13,10 @@ int main(int argc, char **argv)
 	init(&philo, argc, argv);
 	printf("%d\n", philo.philo_num);
 	i = 0;
-	while (i < philo.philo-philo_num)
+	while (i < philo.philo_num)
 	{
 		i++;
-		pthread_craete()
+		pthread_craete();
 	}
 }
  
