@@ -21,4 +21,5 @@ int	init(t_philo *philo, int argc, char **argv)
 		philo->each_philo_eat_time = ft_atoi(argv[5 ]);
 	else
 		philo->each_philo_eat_time = 0;
+	return(0);
 } 

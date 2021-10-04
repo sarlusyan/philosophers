@@ -7,6 +7,7 @@
 #include <sys/time.h>
 #include <unistd.h>
 #include <string.h>
+#include <sys/time.h>
 
 struct s_philo;
 
@@ -16,6 +17,7 @@ typedef struct s_ep
 	int	rfork;
 	int	lfork;
 	int	index;
+	int	last_eat;
 	struct s_philo *philo;
 	pthread_t tid;
 }	t_ep;
@@ -26,6 +28,7 @@ typedef struct s_philo
 	int	time_to_eat;
 	int	time_to_sleep;
 	int	each_philo_eat_time;
+	unsigned long	start_time;
 	t_ep	*ep;
 	pthread_mutex_t	*forks;
 	pthread_mutex_t	meal;
@@ -37,5 +40,6 @@ t_philo philo;
 int		ft_atoi(const char *str);
 int		ft_isdigit(int c);
 int		init(t_philo *philo, int argc, char **argv);
+int		ft_init(t_philo *philo);
 
 #endif

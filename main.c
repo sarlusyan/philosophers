@@ -11,12 +11,8 @@ int main(int argc, char **argv)
 		return 0;
 	}
 	init(&philo, argc, argv);
+	ft_init(&philo);
 	printf("%d\n", philo.philo_num);
-	i = 0;
-	while (i < philo.philo_num)
-	{
-		i++;
-		pthread_craete();
-	}
+	return(0);
 }
  
