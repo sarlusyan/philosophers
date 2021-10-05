@@ -1,5 +1,14 @@
 #include "philo.h"
 
+void    *routine(void *param)
+{
+    t_philo     *philo;
+    t_ep        *ep;
+
+    philo = (t_philo *)params;
+    ep = philo->ep;
+}
+
 unsigned int    get_time(void)
 {
     struct timeval time;
